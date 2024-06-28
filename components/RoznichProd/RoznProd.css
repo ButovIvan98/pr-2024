@@ -1,0 +1,67 @@
+.foodListR {
+    display: inline-block;
+    margin: 0.3rem 0.2rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0.5rem;
+    column-count: 2;
+    width: auto;
+}
+
+.foodCard {
+    /* display: inline-flex; */
+    /* flex-grow: 1; */
+    align-items: center;
+    justify-content: center;
+    float: left;
+    max-width: 100%;
+    width: 562px;
+    height: 290px;
+    align-items: center;
+    vertical-align: middle;
+    /* padding: 0.3rem 1rem; */
+
+}
+
+.roznFoodImg {
+    max-width: 100%;
+}
+
+
+.opisFoodCard {
+    display: flex;
+    flex-wrap: 1;
+    align-items:center;
+    vertical-align: middle;
+    justify-content: center;
+    
+}
+
+.bronOp {
+    display: block;
+    align-items: center;
+    margin:0rem 1rem;
+
+}
+
+.bron {
+    display: inline-flex;
+    max-width: 100%;
+    height: 100%;
+    float: right;
+    align-items: center;
+    margin:0rem 1rem;
+
+}
+
+.bron-btn {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    max-width: 100%;
+    justify-content: center;
+    color: #A16341;
+    border-radius: 16px;
+    border-color: #A16341;
+    border-width: 3px;
+}
