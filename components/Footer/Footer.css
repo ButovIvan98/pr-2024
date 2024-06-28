@@ -1,0 +1,18 @@
+.footer {
+    display:flex;
+    background-color: black;
+    color: #889CB9;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+}
+
+a,
+p {
+    color: #889CB9;
+}
+
+a{
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
