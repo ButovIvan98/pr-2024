@@ -1,10 +1,9 @@
+
 import Header from "./components/Header/Header"
-import TabsSection from "./components/Button/TabsSection"
 import FeedBackSection from "./components/FormSection"
-import { createElement, createRef, useState } from 'react'
+import {useState } from 'react'
 import FoodSection from "./components/PresentFood/FoodSection"
 import "./App.css"
-import Button from "./components/Button/Buttons"
 import { OptovOpisSection } from "./components/OptovProd/OptovOpisSection"
 import { OptovSection } from "./components/OptovProd/OptovSection"
 import { RoznProd } from "./components/RoznichProd/RoznProd"
@@ -14,20 +13,22 @@ import { OtzuvSection } from "./components/Otzuv/OtzuvSection"
 import { DocumentSection } from "./components/Otzuv/DocumentSection"
 import CaruselSection from "./components/Carusel/Carusel"
 import Footer from './components/Footer/Footer'
-// import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"
+import SweetsSection from "./components/PresentFood/SweetsSection"
+import CookesSection from "./components/PresentFood/CookesSection"
+import CoffeeAndTeaSection from "./components/PresentFood/CoffeeAndTeaSection"
+import LeftMenuSection from "./components/navigation/LeftMenu"
+import WinterMenu from "./components/navigation/WinterMenu"
+import SummerMenu from "./components/navigation/SummerMenu"
+
 // Для запуска npm run dev
 
 export default function App() {
   const [visible, setVisible] = useState(true)
   const [tab, setTab] = useState('catalog')
   const [isOpen, setOpen] = useState(false);
-  // const Home = () => <h2>Home</h2>
-  // const News = () => <h2>News</h2>
-  // const Contact = () => <h2>Contact</h2>
-  // const About = () => <h2>About</h2>
+
 
   return (
-
 
     <>
 
@@ -38,38 +39,51 @@ export default function App() {
 
         {tab === 'catalog' && (
           <>
-            <leftMenu>
-              <div className="leftMenuContent">
-                <Button className="menu-button" onClick={() => setOpen(!isOpen)}>
-                  Меню
-                </Button>
-                <nav className={`menu ${isOpen ? "active" : ""}`} >
-                  <ul className="menu__list">
-                    <TabsSection active={tab} onChange={(current) => setTab(current)} />
-                  </ul>
-                </nav>
-              </div>
-            </leftMenu >
+            <CaruselSection />
+            <LeftMenuSection tab={tab} setTab={setTab} />
             <FoodSection />
           </>)
         }
+        {tab === 'winter' && (
+          <>
+            <CaruselSection />
+            <WinterMenu tab={tab} setTab={setTab}/>
+            <h3>Winter Menu</h3>
+            <SweetsSection />
+          </>)
+        }
+        {tab === 'summer' && (
+          <>
+            <CaruselSection />
+            <SummerMenu tab={tab} setTab={setTab}/>
+            <h3>Summer Menu</h3>
+            <SweetsSection />
+          </>)
+        }
+
+
 
         {tab === 'sweets' && (
           <>
             <CaruselSection />
-            <FoodSection />
+            <LeftMenuSection tab={tab} setTab={setTab} />
+            <SweetsSection />
           </>)
         }
 
         {tab === 'coffee and tea' && (
           <>
-            <FoodSection />
+            <CaruselSection />
+            <LeftMenuSection tab={tab} setTab={setTab} />
+            <CoffeeAndTeaSection />
           </>)
         }
 
         {tab === 'cookes' && (
           <>
-            <FoodSection />
+            <CaruselSection />
+            <LeftMenuSection tab={tab} setTab={setTab} />
+            <CookesSection />
           </>)
         }
 
