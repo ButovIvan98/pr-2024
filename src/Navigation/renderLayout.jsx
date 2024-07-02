@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { HeaderComponent } from "../Header/HeaderComponent.jsx";
+import { HeaderComponent } from "../components/Header";
 
 export const Layout = () => {
   return (

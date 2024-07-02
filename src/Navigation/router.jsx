@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { AboutPage } from "../screens/About/About.jsx";
+import { AboutPage } from "../screens/About/About";
 import { HomePage } from "../screens/HomePage";
-import { RenderError } from "./renderErrors.jsx";
+import { RenderError } from "./renderErrors";
 import { Layout } from "./renderLayout";
 
 export const router = createBrowserRouter([
@@ -11,15 +11,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        Component: HomePage,
+        element: <HomePage />,
       },
       {
         path: "/about",
-        Component: AboutPage,
-      },
-      {
-        path: "/posts",
-        Component: AboutPage,
+        element: <AboutPage />,
       },
     ],
   },

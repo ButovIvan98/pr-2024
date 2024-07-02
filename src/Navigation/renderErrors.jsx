@@ -1,5 +1,5 @@
 import { useLocation } from "react-router";
-import { HeaderComponent } from "../Header/HeaderComponent";
+import { HeaderComponent } from "../components/Header";
 
 export const RenderError = () => {
   const { pathname } = useLocation();
