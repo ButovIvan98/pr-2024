@@ -1,26 +1,3 @@
-export const ways = [
-  {
-    title: 'Конфеты и печенье',
-    description:
-      'Из натуральных продуктов, вкусные и полезные. ',
-  },
-  {
-    title: 'Формат обучения.',
-    description:
-      'Пока другие предлагают 50 страниц текста и вебинары по 2 часа, мы даем вам тот же объем знаний в одном тщательно подготовленном видео за 15 минут.',
-  },
-  {
-    title: 'Применение разных форматов.',
-    description:
-      'Видео-уроки, практические задания, конспекты, мастер-классы, обсуждения в сообществе — все это дает полноценную картину и ускоряет процесс обучения.',
-  },
-  {
-    title: 'Наши преподаватели ведущие специалисты',
-    description:
-      'VK, Avito, Тинькофф, Kaspersky — действующие разработчики с опытом преподавания для большой аудитории.',
-  },
-]
-
 
 export const differences = {
   catalog: 'Каталог',
@@ -34,116 +11,139 @@ export const differences = {
 
 export const foodCards = [{
   title: 'Зефир',
+  price:120,
   image: '../src/img/foodcard/img1.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Ежик',
+  price:300,
   image: '../src/img/foodcard/img2.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Марс',
+  price:530,
   image: '../src/img/foodcard/img3.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медовик',
+  price:350,
   image: '../src/img/foodcard/img4.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медочик со сливками',
+  price:200,
   image: '../src/img/foodcard/img5.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Манго',
+  price:300,
   image: '../src/img/foodcard/img6.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Полено',
+  price:220,
   image: '../src/img/foodcard/img7.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Рулет',
+  price:300,
   image: '../src/img/foodcard/img9.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Конвертик',
+  price:125,
   image: '../src/img/foodcard/img10.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Торт',
+  price:300,
   image: '../src/img/foodcard/img8.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Манго',
+  price:300,
   image: '../src/img/foodcard/img6.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Полено',
+  price:425,
   image: '../src/img/foodcard/img7.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Рулет',
+  price:300,
   image: '../src/img/foodcard/img9.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Конвертик',
+  price:700,
   image: '../src/img/foodcard/img10.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Торт',
+  price:300,
   image: '../src/img/foodcard/img8.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Ежик',
+  price:250,
   image: '../src/img/foodcard/img2.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Марс',
+  price:300,
   image: '../src/img/foodcard/img3.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медовик',
+  price:400,
   image: '../src/img/foodcard/img4.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медочик со сливками',
+  price:300,
   image: '../src/img/foodcard/img5.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Ежик',
+  price:500,
   image: '../src/img/foodcard/img2.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Марс',
+  price:300,
   image: '../src/img/foodcard/img3.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медовик',
+  price:300,
   image: '../src/img/foodcard/img4.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 },
 {
   title: 'Медочик со сливками',
+  price:450,
   image: '../src/img/foodcard/img5.jpg',
   description: 'Зеркало синхронизует межатомный магнит.',
 }]
@@ -174,3 +174,144 @@ export const foodRoznCards = [{
   time: 'Пн - Пт 9:00 - 19:00',
 }]
 
+export const SweetCards = [{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Зефир',
+  price:120,
+  image: '../src/img/foodcard/img1.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+}]
+
+export const CookeCards = [{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Ежик',
+  price:250,
+  image: '../src/img/foodcard/img2.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+}]
+
+export const CoffeeCards = [{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+},
+{
+  title: 'Манго',
+  price:300,
+  image: '../src/img/foodcard/img6.jpg',
+  description: 'Зеркало синхронизует межатомный магнит.',
+}]
