@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import './Header.css'
 import HeaderTabs from './HeaderTabs';
 import { VscAccount } from "react-icons/vsc";
+import HeaderTabsMob from './HeaderTabsMob';
 
 
-export default function Header({tab, setTab}) {
+export default function Header({ tab, setTab }) {
   const [now, setNow] = useState(new Date())
   useEffect(() => {
     const interval = setInterval(() => setNow(new Date()), 1000)
@@ -19,12 +20,12 @@ export default function Header({tab, setTab}) {
 
   return (
     <header>
-      {/* <h3>Resalt one</h3> */}
       <img src='src/img/special img/logo-name.svg' alt='' />
-      <HeaderTabs active={tab} onChange={(current) => setTab(current)}/>
-      <button className='edit-btn'> <VscAccount size='16px' color='#3D4249'/>
+      <HeaderTabs active={tab} onChange={(current) => setTab(current)} />
+      <button className='edit-btn'> <VscAccount size='16px' color='#3D4249' />
         Личный кабинет
       </button>
+      <HeaderTabsMob active={tab} onChange={(current) => setTab(current)} />
     </header>
   )
 }
